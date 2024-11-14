@@ -51,7 +51,7 @@ exports.signUp = catchAsync(async (req, res, next) => {
     role: req.body.role,
   });
 
-  const url = `https://carmanagementapp.vercel.app/profile`;
+  const url = `https://car-management-frontend-v328.onrender.com/profile`;
 
   await new Email(newUser, url).sendWelcome();
 
@@ -217,7 +217,7 @@ exports.forgotPassword = async (req, res, next) => {
 
     try {
       // 3️⃣ ) Send it to user's email
-      const resetURL = `https://carmanagementapp.vercel.app/resetPassword/${resetToken}`;
+      const resetURL = `https://car-management-frontend-v328.onrender.com/resetPassword/${resetToken}`;
 
       // --------- Lec_10 ----------
       await new Email(user, resetURL).sendPasswordReset();
