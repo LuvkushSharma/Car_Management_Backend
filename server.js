@@ -25,7 +25,7 @@ app.use(express.json({ limit: "10kb" }));
 app.use(cookieParser());
 
 const corsOptions = {
-  origin: "https://carmanagementapp.vercel.app/",
+  origin: "https://car-management-frontend-v328.onrender.com",
   credentials: true,
   optionSuccessStatus: 200,
   methods: ["GET", "POST", "PUT", "DELETE", "PATCH"],
@@ -47,7 +47,7 @@ const swaggerOptions = {
     },
     servers: [
       {
-        url: "https://carmanagement-backend.vercel.app/api/v1",
+        url: "https://car-management-backend-bm90.onrender.com/api/v1",
       },
     ],
   },
