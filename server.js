@@ -47,7 +47,7 @@ const swaggerOptions = {
     },
     servers: [
       {
-        url: "carmanagement-backend/api/v1",
+        url: "https://carmanagement-backend.vercel.app/api/v1",
       },
     ],
   },
