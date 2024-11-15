@@ -25,10 +25,10 @@ app.use(express.json({ limit: "10kb" }));
 app.use(cookieParser());
 
 const corsOptions = {
-  origin: "https://car-management-frontend-v328.onrender.com",
   credentials: true,
-  optionSuccessStatus: 200,
+  origin: "https://car-management-frontend-v328.onrender.com",
   methods: ["GET", "POST", "PUT", "DELETE", "PATCH"],
+  optionSuccessStatus: 200,
 };
 app.use(cors(corsOptions));
 app.options("*", cors(corsOptions));
