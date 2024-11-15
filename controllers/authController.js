@@ -91,6 +91,9 @@ exports.logout = (req, res, next) => {
 exports.protect = catchAsync(async (req, res, next) => {
   let token = "";
 
+  console.log ("req.cookies : ", req.cookies);
+  console.log ("req.headers : ", req.headers);
+
   if (req.headers?.cookie) {
     const [_, jwtValue] = req.headers.cookie.split("=");
 
